@@ -2,12 +2,12 @@
 
 echo "Deleting old zip"
 
-rm CashFactory.zip
+rm CashFactory.tar.gz
 
 echo "Done!"
 
 echo "Creating new zip"
 
-zip -or CashFactory.zip CashFactory
+tar -cvzf CashFactory.tar.gz CashFactory
 
 echo "Done!"
