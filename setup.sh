@@ -12,14 +12,14 @@ chmod +x setup.sh
 
 sudo ./setup.sh
 
-sudo docker-compose up -d
+sudo docker compose up -d
 
 sudo docker run -it -v $HOME/CashFactory/data/bitping/:/root/.bitping bitping/bitping-node:latest
 
-sudo docker-compose down
+sudo docker compose down
 
 sleep 1
 
-sudo docker-compose up -d
+sudo docker compose up -d
 
 echo "Done!!!!"
